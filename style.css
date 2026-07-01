@@ -193,3 +193,28 @@ gap:40px;
 }
 
 }
+/* === ESGOTADO === */
+.produto.esgotado{
+position:relative;
+opacity:.75;
+}
+
+.produto.esgotado::after{
+content:"ESGOTADO";
+position:absolute;
+top:15px;
+right:15px;
+background:#b94040;
+color:white;
+font-size:11px;
+font-weight:600;
+letter-spacing:2px;
+padding:5px 12px;
+border-radius:50px;
+}
+
+.produto.esgotado a{
+background:#aaa;
+pointer-events:none;
+cursor:not-allowed;
+}
